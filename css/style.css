@@ -1,0 +1,226 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --dark-color: #19293F;
+    --green-color: #35D1CC;
+    --red-color:#FF3150;
+    --white-color:#eee;
+    --section-color:#EFF7FA;
+    --yellow-color:#FFC303;
+}
+/* Start navbar section  */
+.navbar{
+    background-color:var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: var(--white-color);
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color:var(--green-color) ;
+}
+.search{
+    color:var(--green-color) ;
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler{
+border: none;
+color: var(--white-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.btn.rounded-pill{
+    color: #fff;
+    background-color: var(--red-color);
+}
+.btn.rounded-pill:hover{
+    background-color: #b30047;
+    color: #fff;
+}
+/* End navbar section  */
+/* Start Landing section  */
+.landing{
+height: calc(100vh - 70px);
+background-color: var(--dark-color);
+color: var(--white-color);
+}
+.landing h1{
+    font-size: 50px;
+}
+.landing button{
+    padding: 10px 30px;
+}
+/* End Landing section  */
+/* Start features section  */
+.features{
+    position: relative;
+}
+.main-title::after{
+content: "";
+position: absolute;
+width: 125px;
+height: 2px;
+background: var(--green-color);
+left: 50%;
+transform: translateX(-50%);
+}
+.features .icon-holder{
+height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-holder .number{
+color: var(--section-color);
+font-size: 12rem;
+}
+.icon-holder .icon{
+    color: var(--green-color);
+    font-size: 4rem;
+}
+.features h4{
+    color: var(--yellow-color);
+}
+/* End features section  */
+/* Start Ourwork section  */
+.Ourwork{
+    background-color: var(--section-color);
+}
+.Ourwork .navbar{
+    background-color: transparent;
+}
+.Ourwork .navbar .nav-link{
+    color: #212529;
+    font-weight: bold
+}
+.Ourwork .navbar .rounded-pill{
+    background-color: var(--red-color);
+   color: var(--yellow-color);
+}
+.Ourwork .navbar .nav-link:hover,
+.Ourwork .navbar .nav-link:focus{
+    color: var(--red-color);
+}
+.Ourwork .boxs .box{
+    background-color: #fff;
+    padding: 6px;
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+}
+.Ourwork .boxs .box img{
+    width: 100%;
+}
+.Ourwork .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+  }
+.Ourwork .box:hover::before {
+    transform: translateX(0);
+  }
+.Ourwork .btn{
+    color: var(--yellow-color);
+}
+/* End Ourwork section  */
+/* Start About us section  */
+.stuff .description{
+    max-width: 500px;
+}
+.stuff-box .btn{
+    color: var(--yellow-color);
+}
+.stuff-box img{
+    width: 100%;
+}
+/* End About us section  */
+/* Start Team section  */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .card-title{
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+.card-body{
+    padding: 0px;
+}
+.card-body p{
+    font-size: 15px;
+}
+/* End Team section  */
+/* Start your project section */
+.yourProject{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.yourProject .btn{
+    color: var(--yellow-color);
+    font-size: 18px;
+}
+/* End your project section */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="email"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+  }
+.subscribe input[type="submit"]{
+    background: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* STart the Footer section */
+.footer{
+    background-color: var(--dark-color);
+}
+.info .copyright span{
+    color: var(--green-color);
+}
+.info .bondi span{
+    color: var(--yellow-color);
+}
+.footer ul li{
+    margin: 10px 0;
+}
+.contactUs .btn{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .facebook {
+    background-color: #1877f2;
+  }
+  .footer .twitter {
+    background-color: #1da1f2;
+  }
+  .footer .linkedin {
+    background-color: #0077b5;
+  }
+  .footer .youtube {
+    background-color: #ff0000;
+  }
+/* End the Footer section */
